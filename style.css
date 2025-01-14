@@ -1,0 +1,136 @@
+/* General Styling */
+body {
+    font-family: 'Vazir', sans-serif;
+    background-color: #f7f7f7;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+header {
+    background-color: #222;
+    color: white;
+    padding: 20px 0;
+}
+
+header .navbar-brand {
+    font-size: 2rem;
+}
+
+.navbar-nav .nav-link {
+    color: white;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #f39c12;
+}
+
+/* Hero Section */
+.hero {
+    background-color: #282c34;
+    color: white;
+    padding: 60px 0;
+    text-align: center;
+}
+
+.hero h2 {
+    font-size: 3rem;
+}
+
+.hero p {
+    font-size: 1.2rem;
+}
+
+.hero .btn {
+    background-color: #f39c12;
+    color: white;
+    font-size: 1.2rem;
+}
+
+.hero .btn:hover {
+    background-color: #e67e22;
+}
+
+/* Courses and Videos Section */
+.courses, .videos {
+    padding: 60px 0;
+}
+
+.courses h2, .videos h2 {
+    color: #333;
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+}
+
+.card {
+    border: none;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    background-color: #fff;
+}
+
+.card-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.card-text {
+    font-size: 1.1rem;
+    color: #555;
+}
+
+.card .btn-warning {
+    background-color: #f39c12;
+    border-color: #f39c12;
+}
+
+.card .btn-warning:hover {
+    background-color: #e67e22;
+}
+
+/* Footer */
+footer {
+    background-color: #222;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+footer a {
+    color: #f39c12;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Container */
+.container {
+    max-width: 1200px;
+}
+
+/* Responsive Media Queries */
+@media (max-width: 767px) {
+    .hero h2 {
+        font-size: 2.5rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    .courses h2, .videos h2 {
+        font-size: 2rem;
+    }
+
+    .card-title {
+        font-size: 1.2rem;
+    }
+
+    .card-text {
+        font-size: 1rem;
+    }
+}
