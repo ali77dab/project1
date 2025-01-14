@@ -4,179 +4,64 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Musix - Online Music Education</title>
-    
-    <!-- Bootstrap CSS from CDN -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
 
     <!-- Google Font (Vazir) -->
     <link href="https://fonts.googleapis.com/css2?family=Vazir&display=swap" rel="stylesheet">
 
-    <!-- Custom Styles -->
-    <style>
-        body {
-            font-family: 'Vazir', sans-serif;
-            background-color: #f7f7f7;
-            color: #333;
-        }
-        header {
-            background-color: #222;
-            color: white;
-            padding: 20px 0;
-        }
-        header .navbar-brand {
-            font-size: 2rem;
-        }
-        .hero {
-            background-color: #282c34;
-            color: white;
-            padding: 60px 0;
-            text-align: center;
-        }
-        .hero h2 {
-            font-size: 3rem;
-        }
-        .hero p {
-            font-size: 1.2rem;
-        }
-        .courses, .videos {
-            padding: 60px 0;
-        }
-        .card {
-            border: none;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-            border-radius: 8px;
-        }
-        .card-title {
-            font-size: 1.5rem;
-            font-weight: bold;
-        }
-        .btn-warning {
-            background-color: #f39c12;
-            border-color: #f39c12;
-        }
-        footer {
-            background-color: #222;
-            color: white;
-            padding: 20px;
-            text-align: center;
-        }
-        footer a {
-            color: #f39c12;
-            text-decoration: none;
-            margin: 0 10px;
-        }
-        footer a:hover {
-            text-decoration: underline;
-        }
-        .container {
-            max-width: 1200px;
-        }
-    </style>
+    <!-- Custom Stylesheet -->
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
 <!-- Header -->
 <header>
-    <nav class="navbar navbar-expand-lg navbar-dark">
-        <div class="container-fluid">
+    <nav class="navbar">
+        <div class="navbar-container">
             <a class="navbar-brand" href="#">Musix</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Courses</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Exercises</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Articles</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Videos</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Contact Us</a></li>
-                </ul>
-            </div>
+            <ul class="navbar-nav">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Courses</a></li>
+                <li><a href="#">Exercises</a></li>
+                <li><a href="#">Articles</a></li>
+                <li><a href="#">Videos</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
         </div>
     </nav>
 </header>
 
 <!-- Hero Section -->
 <section class="hero">
-    <h2>Learn Music the Modern Way</h2>
-    <p>Join our online courses for all levels, from beginner to expert.</p>
-    <a href="#" class="btn btn-warning btn-lg">Start Learning</a>
-</section>
-
-<!-- Featured Courses Section -->
-<section class="courses">
-    <div class="container text-center">
-        <h2 class="mb-5" style="color: #333;">Popular Courses</h2>
-        <div class="row row-cols-1 row-cols-md-3 g-4">
-            <div class="col">
-                <div class="card">
-                    <img src="https://via.placeholder.com/300" class="card-img-top" alt="Course 1">
-                    <div class="card-body">
-                        <h5 class="card-title">Sight Reading</h5>
-                        <p class="card-text">Master reading music notes with this course for beginners and intermediate students.</p>
-                        <a href="#" class="btn btn-warning">View Course</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card">
-                    <img src="https://via.placeholder.com/300" class="card-img-top" alt="Course 2">
-                    <div class="card-body">
-                        <h5 class="card-title">Music Theory</h5>
-                        <p class="card-text">Learn the basics of music theory and understand the fundamental principles behind music.</p>
-                        <a href="#" class="btn btn-warning">View Course</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card">
-                    <img src="https://via.placeholder.com/300" class="card-img-top" alt="Course 3">
-                    <div class="card-body">
-                        <h5 class="card-title">Piano Lessons</h5>
-                        <p class="card-text">A comprehensive piano course for learners at all levels.</p>
-                        <a href="#" class="btn btn-warning">View Course</a>
-                    </div>
-                </div>
-            </div>
-        </div>
+    <div class="hero-content">
+        <h1>Learn Music with Musix</h1>
+        <p>Join our platform to learn music theory, instruments, and more from beginner to advanced levels.</p>
+        <a href="#" class="btn">Start Learning</a>
     </div>
 </section>
 
-<!-- Free Videos Section -->
-<section class="videos">
-    <div class="container text-center">
-        <h2 class="mb-5" style="color: #333;">Free Educational Videos</h2>
-        <div class="row row-cols-1 row-cols-md-3 g-4">
-            <div class="col">
-                <div class="card">
-                    <img src="https://via.placeholder.com/300" class="card-img-top" alt="Video 1">
-                    <div class="card-body">
-                        <h5 class="card-title">Introduction to Sight Reading</h5>
-                        <p class="card-text">Start learning the basics of sight reading with this free video.</p>
-                        <a href="#" class="btn btn-warning">Watch Video</a>
-                    </div>
-                </div>
+<!-- Courses Section -->
+<section class="courses">
+    <h2>Popular Courses</h2>
+    <div class="course-cards">
+        <div class="card">
+            <div class="card-content">
+                <h3>Sight Reading</h3>
+                <p>Learn how to read music notes efficiently with our guided lessons.</p>
+                <a href="#" class="btn">View Course</a>
             </div>
-            <div class="col">
-                <div class="card">
-                    <img src="https://via.placeholder.com/300" class="card-img-top" alt="Video 2">
-                    <div class="card-body">
-                        <h5 class="card-title">Understanding Chords</h5>
-                        <p class="card-text">Get an introduction to the basic chords used in music.</p>
-                        <a href="#" class="btn btn-warning">Watch Video</a>
-                    </div>
-                </div>
+        </div>
+        <div class="card">
+            <div class="card-content">
+                <h3>Music Theory</h3>
+                <p>Master music theory to understand how music is constructed and performed.</p>
+                <a href="#" class="btn">View Course</a>
             </div>
-            <div class="col">
-                <div class="card">
-                    <img src="https://via.placeholder.com/300" class="card-img-top" alt="Video 3">
-                    <div class="card-body">
-                        <h5 class="card-title">Advanced Chord Techniques</h5>
-                        <p class="card-text">Learn advanced chord progressions in this free video tutorial.</p>
-                        <a href="#" class="btn btn-warning">Watch Video</a>
-                    </div>
-                </div>
+        </div>
+        <div class="card">
+            <div class="card-content">
+                <h3>Piano Lessons</h3>
+                <p>Learn piano from basic to advanced with expert teachers.</p>
+                <a href="#" class="btn">View Course</a>
             </div>
         </div>
     </div>
@@ -184,17 +69,13 @@
 
 <!-- Footer -->
 <footer>
-    <p>&copy; 2025 Musix. All Rights Reserved.</p>
-    <div>
-        <a href="#">Instagram</a>|
-        <a href="#">Twitter</a>|
-        <a href="#">YouTube</a>
+    <div class="social-media">
+        <a href="#">Instagram</a>
+        <a href="#">Facebook</a>
+        <a href="#">Twitter</a>
     </div>
+    <p>&copy; 2025 Musix. All Rights Reserved.</p>
 </footer>
-
-<!-- Bootstrap JS and Popper.js -->
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" crossorigin="anonymous"></script>
 
 </body>
 </html>
