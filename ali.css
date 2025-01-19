@@ -1,0 +1,141 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    margin: 0;
+}
+
+.content-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    margin: 20px;
+}
+
+.video-box {
+    flex: 2;
+    position: relative;
+}
+
+video {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.play-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.course-details {
+    flex: 1;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.details-box p {
+    margin: 10px 0;
+}
+
+.join-now {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.info-nav {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.nav-item {
+    padding: 10px 20px;
+    background-color: #fff;
+    border-radius: 25px;
+    cursor: pointer;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.nav-item:hover {
+    background-color: #f1f1f1;
+}
+
+.blocks-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 20px;
+}
+
+.block {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    margin: 10px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+}
+
+.block-title {
+    font-weight: bold;
+    color: #FFA500; /* Yellow color */
+    font-size: 20px;
+}
+
+.block p {
+    margin: 10px 0;
+}
+
+.block ul {
+    margin: 10px 0;
+}
+
+.circle {
+    width: 20px;
+    height: 20px;
+    background-color: black;
+    border-radius: 50%;
+    margin-top: 10px;
+}
+
+.circle-profile {
+    width: 50px;
+    height: 50px;
+    background-color: #ddd;
+    border-radius: 50%;
+    margin-top: 10px;
+}
+
+.divider {
+    width: 100%;
+    height: 2px;
+    background-color: #000;
+    margin-top: 10px;
+}

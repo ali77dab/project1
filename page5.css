@@ -1,0 +1,445 @@
+/* Apply fonts globally */
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Poppins', sans-serif;
+}
+
+input[type="text"], .btn, .form-control {
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Apply fonts globally */
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Poppins', sans-serif;
+}
+
+input[type="text"], .btn, .form-control {
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Background Gradient */
+body, html {
+    height: 100%;
+    margin: 0;
+    background: linear-gradient(to bottom, #003366, #cccccc); 
+
+/* Header */
+header {
+    background-color: #000;
+}
+
+/* Logo */
+header h1 {
+    font-size: 1.5rem;
+    color: white;
+}
+
+/* Search Bar */
+input[type="text"] {
+    border-radius: 20px;
+    padding: 10px;
+    font-size: 1rem;
+    border: none;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Cart Icon */
+.cart-icon, .profile-icon {
+    font-size: 24px;
+    color: white;
+    cursor: pointer;
+}
+
+/* Menu (Hamburger) */
+.navbar-toggler {
+    color: white;
+    font-size: 30px;
+    border: none;
+}
+
+/* Profile Section */
+.profile-section {
+    text-align: left;
+    background-color: #ffffff;  /* White Background */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    border-radius: 10px;
+    margin-bottom: 30px;  /* Space between boxes */
+}
+
+.profile-section img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+}
+
+/* Experience Section */
+.experience-section {
+    text-align: left;
+    background-color: #f8f1e0;  /* Soft Cream Background */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    border-radius: 10px;
+    margin-bottom: 30px;  /* Space between boxes */
+}
+
+.experience-section .list-group-item {
+    background-color: #f8f1e0;  /* Soft Cream Background */
+    border: none;
+    padding: 15px;
+}
+
+.experience-section .list-group-item h5 {
+    margin-bottom: 5px;
+}
+
+/* Education Section */
+.education-section {
+    text-align: left;
+    background-color: #ffffff;  /* White Background */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    border-radius: 10px;
+    margin-bottom: 30px;  /* Space between boxes */
+}
+
+.education-section .list-group-item {
+    background-color: #ffffff;  /* White Background */
+    border: none;
+    padding: 15px;
+}
+
+.education-section .list-group-item h5 {
+    margin-bottom: 5px;
+}
+
+/* Skills Section */
+.skills-section {
+    text-align: left;
+    background-color: #f8f1e0;  /* Soft Cream Background */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    border-radius: 10px;
+    margin-bottom: 30px;  /* Space between boxes */
+}
+
+.skills-section .list-group-item {
+    background-color: #f8f1e0;  /* Soft Cream Background */
+    border: none;
+    padding: 15px;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+/* Social Media Icons */
+footer .social-icons a {
+    color: white;
+    font-size: 20px;
+}
+
+/* Privacy, Terms, About Us Links */
+footer .container a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+footer .container a:hover {
+    text-decoration: underline;
+}
+
+/* Offcanvas Cart */
+.offcanvas-end {
+    width: 350px;
+    background-color: #f8f1e0;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.offcanvas-header {
+    border-bottom: 1px solid #ccc;
+}
+
+.offcanvas-body {
+    padding-top: 20px;
+    color: #333;
+}
+
+/* Button Style */
+.offcanvas-header .btn-close {
+    background-color: transparent;
+    border: none;
+    font-size: 30px;
+    color: #333;
+}
+
+/* Message Text */
+#cartContent p {
+    font-size: 1.2rem;
+    color: #666;
+    font-weight: bold;
+}
+
+/* Cart Icon when clicked */
+.cart-icon {
+    font-size: 24px;
+    color: white;
+    cursor: pointer;
+    position: relative;
+}
+
+.cart-icon:after {
+    content: " ";
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    background-color: red;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    display: none;
+}
+
+.cart-icon.cart-full:after {
+    display: block;
+}
+
+/* Footer Icons */
+footer .social-icons {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+/* Privacy, Terms, About Us Links */
+footer .container a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+footer .container a:hover {
+    text-decoration: underline;
+}
+
+/* Header */
+header {
+    background-color: #000;
+}
+
+/* Logo */
+header h1 {
+    font-size: 1.5rem;
+    color: white;
+}
+
+/* Search Bar */
+input[type="text"] {
+    border-radius: 20px;
+    padding: 10px;
+    font-size: 1rem;
+    border: none;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Cart Icon */
+.cart-icon, .profile-icon {
+    font-size: 24px;
+    color: white;
+    cursor: pointer;
+}
+
+/* Menu (Hamburger) */
+.navbar-toggler {
+    color: white;
+    font-size: 30px;
+    border: none;
+}
+
+/* Profile Section */
+.profile-section {
+    text-align: left;
+    background-color: #ffffff;  /* White Background */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    border-radius: 10px;
+    margin-bottom: 30px;  /* Space between boxes */
+}
+
+.profile-section img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+}
+
+/* Experience Section */
+.experience-section {
+    text-align: left;
+    background-color: #f8f1e0;  /* Soft Cream Background */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    border-radius: 10px;
+    margin-bottom: 30px;  /* Space between boxes */
+}
+
+.experience-section .list-group-item {
+    background-color: #f8f1e0;  /* Soft Cream Background */
+    border: none;
+    padding: 15px;
+}
+
+.experience-section .list-group-item h5 {
+    margin-bottom: 5px;
+}
+
+/* Education Section */
+.education-section {
+    text-align: left;
+    background-color: #ffffff;  /* White Background */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    border-radius: 10px;
+    margin-bottom: 30px;  /* Space between boxes */
+}
+
+.education-section .list-group-item {
+    background-color: #ffffff;  /* White Background */
+    border: none;
+    padding: 15px;
+}
+
+.education-section .list-group-item h5 {
+    margin-bottom: 5px;
+}
+
+/* Skills Section */
+.skills-section {
+    text-align: left;
+    background-color: #f8f1e0;  /* Soft Cream Background */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    border-radius: 10px;
+    margin-bottom: 30px;  /* Space between boxes */
+}
+
+.skills-section .list-group-item {
+    background-color: #f8f1e0;  /* Soft Cream Background */
+    border: none;
+    padding: 15px;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+/* Social Media Icons */
+footer .social-icons a {
+    color: white;
+    font-size: 20px;
+}
+
+/* Privacy, Terms, About Us Links */
+footer .container a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+footer .container a:hover {
+    text-decoration: underline;
+}
+
+/* Offcanvas Cart */
+.offcanvas-end {
+    width: 350px;
+    background-color: #f8f1e0;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.offcanvas-header {
+    border-bottom: 1px solid #ccc;
+}
+
+.offcanvas-body {
+    padding-top: 20px;
+    color: #333;
+}
+
+/* Button Style */
+.offcanvas-header .btn-close {
+    background-color: transparent;
+    border: none;
+    font-size: 30px;
+    color: #333;
+}
+
+/* Message Text */
+#cartContent p {
+    font-size: 1.2rem;
+    color: #666;
+    font-weight: bold;
+}
+
+/* Cart Icon when clicked */
+.cart-icon {
+    font-size: 24px;
+    color: white;
+    cursor: pointer;
+    position: relative;
+}
+
+.cart-icon:after {
+    content: " ";
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    background-color: red;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    display: none;
+}
+
+.cart-icon.cart-full:after {
+    display: block;
+}
+
+/* Footer Icons */
+footer .social-icons {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+/* Privacy, Terms, About Us Links */
+footer .container a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+footer .container a:hover {
+    text-decoration: underline;
+}

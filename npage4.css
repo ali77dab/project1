@@ -1,0 +1,143 @@
+/* Background Gradient */
+body, html {
+    height: 180%;
+    margin: 0;
+    background: linear-gradient(to bottom, #003366, #cccccc);
+}
+
+/* Header */
+header {
+    background-color: #000;
+}
+
+/* Logo */
+header h1 {
+    font-size: 1.5rem;
+    color: white;
+}
+
+/* Search Bar */
+input[type="text"] {
+    border-radius: 20px;
+    padding: 10px;
+    font-size: 1rem;
+    border: none;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Cart Icon */
+.cart-icon, .profile-icon {
+    font-size: 24px;
+    color: white;
+    cursor: pointer;
+}
+
+/* Menu (Hamburger) */
+.navbar-toggler {
+    color: white;
+    font-size: 30px;
+    border: none;
+}
+
+/* Hero Image Section */
+.hero-image img {
+    width: 100%;
+    height: auto;
+}
+
+/* Title Style */
+.explore-title h2 {
+    font-size: 2.5rem;
+    color: #fff;
+    padding: 20px 0;
+}
+
+/* Posts Section */
+.posts-section .post {
+    width: 30%;
+    background-color: #f1f1f1;
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.profile-info {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.profile-info img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.actions button {
+    border: none;
+    background: transparent;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.actions .like-btn.liked {
+    color: red;
+}
+
+/* Footer */
+footer {
+    background-color: #000;
+    padding: 20px 0;
+}
+
+footer .container {
+    text-align: center;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+    padding: 0 10px;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Social Media Icons */
+.social-icons a {
+    color: white;
+    font-size: 20px;
+}
+
+/* Ensure the footer sticks to the bottom of the page */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex: 1;
+}
+
+/* Footer Icons */
+footer .social-icons {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+/* Privacy, Terms, About Us Links */
+footer .container a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+footer .container a:hover {
+    text-decoration: underline;
+}

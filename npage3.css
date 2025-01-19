@@ -1,0 +1,248 @@
+/* Apply fonts globally */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, #003366, #cccccc);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Poppins', sans-serif;
+}
+
+input[type="text"], .btn, .form-control {
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Header */
+header {
+    background-color: #000;
+}
+
+/* Logo Image */
+.logo-img {
+    width: 80px;  /* اندازه لوگو را تنظیم کنید */
+    height: 80px; /* برای دایره‌ای شدن باید ارتفاع و عرض یکسان باشد */
+    border-radius: 50%;  /* به تصویر فرم دایره بدهید */
+    object-fit: cover;  /* به تصاویر اجازه می‌دهد که به‌خوبی درون دایره قرار گیرند */
+}
+
+header .navbar-toggler {
+    color: white;
+    font-size: 30px;
+    border: none;
+}
+
+/* Logo */
+header .text-center h1 {
+    margin: 0;
+}
+
+/* Search Bar */
+input[type="text"] {
+    border-radius: 20px;
+    padding: 10px;
+    font-size: 1rem;
+    border: none;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Cart Icon */
+.cart-icon, .profile-icon {
+    font-size: 24px;
+    color: white;
+    cursor: pointer;
+}
+
+.cart-icon:after {
+    content: " ";
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    background-color: red;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    display: none;
+}
+
+.cart-icon.cart-full:after {
+    display: block;
+}
+
+/* Main Content */
+main {
+    flex: 1;
+}
+
+.container-fluid img {
+    width: 100%;
+    height: auto;
+}
+
+/* Section Titles */
+.title {
+    font-family: 'Inter', sans-serif;
+    font-weight: bold;
+    font-size: 2rem;
+    margin-bottom: 15px;
+    color: white;
+}
+
+p {
+    font-size: 1rem;
+    color: #d4af37;
+}
+
+/* Filter Section */
+.filter-section .form-label {
+    font-weight: 600;
+}
+
+.filter-section .form-select {
+    border-radius: 20px;
+}
+
+/* Posts Section */
+.posts-section .row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.post {
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.post .d-flex {
+    margin-bottom: 15px;
+}
+
+.post .d-flex img {
+    width: 40px;
+    height: 40px;
+}
+
+.post .d-flex h5 {
+    margin-bottom: 5px;
+}
+
+.post .d-flex p {
+    font-size: 0.9rem;
+    color: #6c757d;
+}
+
+.post .d-flex i {
+    font-size: 20px;
+    cursor: pointer;
+    color: #6c757d;
+}
+
+.post .d-flex i:hover {
+    color: #007bff;
+}
+
+/* Offcanvas Cart */
+.offcanvas-end {
+    width: 350px;
+    background-color: #f8f1e0;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.offcanvas-header {
+    border-bottom: 1px solid #ccc;
+}
+
+.offcanvas-body {
+    padding-top: 20px;
+    color: #333;
+}
+
+/* Button Style */
+.offcanvas-header .btn-close {
+    background-color: transparent;
+    border: none;
+    font-size: 30px;
+    color: #333;
+}
+
+/* Message Text */
+#cartContent p {
+    font-size: 1.2rem;
+    color: #666;
+    font-weight: bold;
+}
+
+/* Footer */
+footer {
+    background-color: #000;
+    padding: 20px 0;
+}
+
+footer .container {
+    text-align: center;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+    padding: 0 10px;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Social Media Icons */
+.social-icons a {
+    color: white;
+    font-size: 20px;
+}
+
+footer .social-icons {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+footer .container a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+footer .container a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .cart-icon, .profile-icon {
+        font-size: 20px;
+    }
+
+    header .col-3 {
+        display: none;
+    }
+
+    header .col-1 {
+        font-size: 18px;
+    }
+
+    .posts-section .post {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
