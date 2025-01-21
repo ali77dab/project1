@@ -1,0 +1,112 @@
+/* General body styling */
+body {
+  font-family: , sans-serif;
+  background-image: url('https://i.postimg.cc/GtzVvGS1/sign-up.png'); /* Path to your background image */
+  background-size: cover; /* Ensures the image covers the entire screen */
+  background-position: center; /* Centers the background image */
+  background-attachment: fixed; /* Keeps the background fixed while scrolling */
+  margin: 90px;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto; /* Makes sure the body takes full height of the viewport */
+}
+
+/* Styling for the registration form container */
+.container {
+  background-color: rgba(255, 255, 255, 1);
+  /* White bacoppkground with transparency */
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 5px 4px 12px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  text-align: center;
+}
+
+/* Header styling */
+h2 {
+  color: red;
+  margin-bottom: 20px;
+  
+  font-weight: 1000;
+
+
+}
+
+/* Input field styling */
+.input-field {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 15px;
+  opacity:.5
+}
+
+/* Register button styling */
+.register-btn {
+  width: 100%;
+  padding: 5px;
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  font-size: 16px;
+  border-radius: 16px;
+  cursor: pointer;
+}
+
+.register-btn:hover {
+  color: black;
+}
+
+/* Google signup button styling */
+.google-btn {
+  width: 100%;
+  padding: 5px;
+  background-color: red;
+  
+  border: 10px;
+  color: white;
+  font-size: 16px;
+  
+  font-weight: bold;
+
+
+  border-radius: 16px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 15px;
+}
+
+.google-btn img {
+  width: 20px;
+  margin-left: 10px;
+}
+
+.google-btn:hover {
+  color:black ;
+}
+
+/* Footer link styling */
+.footer {
+  margin-top: 20px;
+  margin-bottom:-10px;
+  opacity:0.5;
+    font-size:80%;
+
+}
+
+.footer a {
+  text-decoration: none;
+  font-size:80%;
+  color: #007BFF;
+ 
+}
+
+.footer a:hover {
+  text-decoration: blink;
+}

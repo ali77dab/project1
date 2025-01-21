@@ -1,4 +1,4 @@
-/* Apply fonts globally */
+/* Global Styles */
 body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
@@ -20,25 +20,23 @@ input[type="text"], .btn, .form-control {
 /* Header */
 header {
     background-color: #000;
+    padding: 15px 0;
+  
+  
 }
 
-/* Logo Image */
-.logo-img {
-    width: 80px;  /* اندازه لوگو را تنظیم کنید */
-    height: 80px; /* برای دایره‌ای شدن باید ارتفاع و عرض یکسان باشد */
-    border-radius: 50%;  /* به تصویر فرم دایره بدهید */
-    object-fit: cover;  /* به تصاویر اجازه می‌دهد که به‌خوبی درون دایره قرار گیرند */
+header .logo-img {
+    width: 100%;
+    max-width: 100px;
+    height: auto;
+    border-radius: 50%;
+    object-fit: contain;
 }
 
 header .navbar-toggler {
     color: white;
     font-size: 30px;
     border: none;
-}
-
-/* Logo */
-header .text-center h1 {
-    margin: 0;
 }
 
 /* Search Bar */
@@ -56,22 +54,7 @@ input[type="text"] {
     font-size: 24px;
     color: white;
     cursor: pointer;
-}
 
-.cart-icon:after {
-    content: " ";
-    position: absolute;
-    top: -5px;
-    right: -5px;
-    background-color: red;
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    display: none;
-}
-
-.cart-icon.cart-full:after {
-    display: block;
 }
 
 /* Main Content */
@@ -79,23 +62,55 @@ main {
     flex: 1;
 }
 
-.container-fluid img {
-    width: 100%;
-    height: auto;
-}
-
-/* Section Titles */
+/* Section Styles */
 .title {
     font-family: 'Inter', sans-serif;
     font-weight: bold;
-    font-size: 2rem;
+    font-size: 3rem;
     margin-bottom: 15px;
     color: white;
 }
 
 p {
-    font-size: 1rem;
+    font-size: 1.5rem;
     color: #d4af37;
+  padding:.5rem;
+    margin:2rem;
+  margin-left:auto;
+  
+}
+
+/* Section 3 */
+.section-3 .row {
+    display: flex;
+    align-items: center;
+}
+
+.section-3 .col-md-6 img {
+    max-width: 60%;
+    margin-right: 20px;
+}
+
+.section-3 .col-md-6 h2,
+.section-3 .col-md-6 p {
+    text-align: left;
+}
+
+/* Section 4 (Text & Image Reversed) */
+.section-4 .row {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+}
+
+.section-4 .col-md-6 img {
+    max-width: 90%;
+    margin-left: 20px;
+}
+
+.section-4 .col-md-6 h2,
+.section-4 .col-md-6 p {
+    text-align: left;
 }
 
 /* Filter Section */
@@ -112,34 +127,109 @@ p {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+  
 }
 
 .post {
+    position: relative;  /* موقعیت‌دهی به دکمه خرید نسبت به این کادر */
     border: 1px solid #e0e0e0;
     border-radius: 8px;
     background-color: white;
+    background-size: cover;
+    background-position: center;
     padding: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
+    background-repeat: no-repeat;
+    min-height: 200px;
+    position: relative; /* ضروری است که پست موقعیت‌دهی نسبی داشته باشد */
 }
+/* استایل برای متن پست */
+.post-text {
+    font-size: 5rem;  /* اندازه فونت */
+    font-weight: 500;   /* وزن فونت (نیمه‌پررنگ) */
+    color: #ffffff;     /* رنگ متن (سفید) */
+    background-color: rgba(0, 0, 0, 0.6); /* پس‌زمینه نیمه‌شفاف */
+    padding: 10px 15px;  /* فاصله داخل جعبه */
+    border-radius: 10px; /* گوشه‌های گرد */
+    max-width: 80%;      /* حداکثر عرض متن */
+    margin: 10px auto;   /* فاصله از بالا و پایین و وسط‌چین کردن */
+    text-align: center;  /* وسط‌چین کردن متن */
+    position: relative;  /* موقعیت‌دهی نسبت به سایر عناصر */
+    z-index: 1;          /* اولویت لایه‌بندی */
+}
+
+
 
 .post .d-flex {
-    margin-bottom: 15px;
+    position: relative;
+    
+    bottom: -30px; /* فاصله ۱۰ پیکسل از پایین */
+    /* از اینجا برای وسط‌چین کردن استفاده می‌شود */
+    transform: translateX(-50%); /* استفاده از translateX به جای translate(-50%) */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px; /* فاصله بین عکس پروفایل و متن */
 }
+
 
 .post .d-flex img {
-    width: 40px;
-    height: 40px;
+     position:absolute;
+     left:50%;
+    top:2000%;
+      width: 30px;
+     height: 30px;
+     border-radius: 50%; /* دایره‌ای کردن عکس */
+     border: 2px solid white;
+} 
+/* استایل برای دکمه خرید */
+/* استایل برای دکمه خرید */
+
+
+.buy-btn {
+    position: absolute;  /* موقعیت‌دهی دکمه */
+    bottom: 10px;  /* فاصله از پایین */
+    right: 10px;  /* فاصله از سمت راست */
+    background-color: #007bff;  /* رنگ پس‌زمینه دکمه */
+    color: white;  /* رنگ متن دکمه */
+    padding: 8px 16px;  /* فضای داخلی دکمه */
+    border-radius: 25px;  /* گوشه‌های گرد */
+    font-size: 1.2rem;  /* اندازه فونت */
+    cursor: pointer;  /* تغییر نشانگر به دست */
+    text-align: center;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: background-color 0.3s ease;  /* انیمیشن برای تغییر رنگ */
 }
 
-.post .d-flex h5 {
-    margin-bottom: 5px;
+.buy-btn i {
+    font-size: 1.5rem;  /* اندازه آیکن */
 }
+
+/* تغییر رنگ دکمه هنگام هاور */
+.buy-btn:hover {
+    background-color: #0056b3;  /* تغییر رنگ به آبی تیره هنگام هاور */
+}
+
+
 
 .post .d-flex p {
-    font-size: 0.9rem;
-    color: #6c757d;
+    position: absolute;
+    bottom: -185px;     /* فاصله از پایین */
+    left: 30px;       /* فاصله از سمت چپ */
+    right: -150px;      /* فاصله از سمت راست */
+    font-size: 0.8rem; /* اندازه فونت */
+    color: #6c757d;    /* رنگ متن */
+    padding: 10px 10px; /* فاصله داخلی مناسب */
+    margin: 0;         /* حذف فاصله خارجی اضافی */
+    white-space: nowrap; /* جلوگیری از شکستن متن */
+    text-overflow: ellipsis; /* نمایش ... برای متن طولانی */
+    overflow: hidden;  /* مخفی کردن قسمتی از متن که از باکس بیرون می‌رود */
+    width: auto;       /* عرض خودکار */
 }
+
 
 .post .d-flex i {
     font-size: 20px;
@@ -149,39 +239,6 @@ p {
 
 .post .d-flex i:hover {
     color: #007bff;
-}
-
-/* Offcanvas Cart */
-.offcanvas-end {
-    width: 350px;
-    background-color: #f8f1e0;
-    border-radius: 15px;
-    padding: 20px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-}
-
-.offcanvas-header {
-    border-bottom: 1px solid #ccc;
-}
-
-.offcanvas-body {
-    padding-top: 20px;
-    color: #333;
-}
-
-/* Button Style */
-.offcanvas-header .btn-close {
-    background-color: transparent;
-    border: none;
-    font-size: 30px;
-    color: #333;
-}
-
-/* Message Text */
-#cartContent p {
-    font-size: 1.2rem;
-    color: #666;
-    font-weight: bold;
 }
 
 /* Footer */
@@ -227,7 +284,20 @@ footer .container a:hover {
 }
 
 /* Responsive Design */
-@media (max-width: 768px) {
+@media (max-width: 768px) 
+{
+     input[type="text"] {
+        width: 50%; /* عرض جعبه جستجو را در موبایل کمی کاهش می‌دهیم */
+        margin: 10px auto; /* فاصله از بالا و پایین */
+        display: block; /* اطمینان از نمایش صحیح */
+               max-width: 35px; /* عرض حداکثری برای جلوگیری از بزرگ شدن بیش از حد */
+
+    }
+
+    /* سایر عناصر که می‌خواهید در موبایل نمایش داده شوند */
+    header .navbar-toggler {
+        display: block; /* برای نمایش دکمه منو در موبایل */
+    }
     .cart-icon, .profile-icon {
         font-size: 20px;
     }
@@ -241,8 +311,17 @@ footer .container a:hover {
     }
 
     .posts-section .post {
-        width: 100%;
+        width: 150%;
         margin-bottom: 20px;
     }
-}
 
+    .posts-section .row {
+        flex-direction: column;  /* کادرها را به صورت عمودی بچین */
+        align-items: left;     /* برای اینکه کادرها وسط چین شوند */
+    }
+
+    .post {
+      min-width: 200px;  /* برای جلوگیری از چسبیدن کادرها به دیواره */animation-delay
+        margin-bottom: 20px;  /* فاصله بین کادرها */
+    }
+}

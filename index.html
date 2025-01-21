@@ -3,79 +3,117 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Musix - Online Music Education</title>
-
-    <!-- Google Font (Vazir) -->
-    <link href="https://fonts.googleapis.com/css2?family=Vazir&display=swap" rel="stylesheet">
-
-    <!-- Custom Stylesheet -->
+    <title>Responsive Website</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 <body>
 
-<!-- Header -->
-<header>
-    <nav class="navbar">
-        <div class="navbar-container">
-            <a class="navbar-brand" href="#">Musix</a>
-            <ul class="navbar-nav">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Courses</a></li>
-                <li><a href="#">Exercises</a></li>
-                <li><a href="#">Articles</a></li>
-                <li><a href="#">Videos</a></li>
-                <li><a href="#">Contact Us</a></li>
-            </ul>
-        </div>
-    </nav>
-</header>
+    <!-- Header Section -->
+    <header class="bg-black text-white py-2">
+        <div class="container-fluid">
+            <div class="row align-items-center">
+                <!-- Hamburger Menu -->
+                <div class="col-1">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuDropdown" aria-controls="menuDropdown" aria-expanded="false">
+                        &#9776;
+                    </button>
+                    <div class="collapse navbar-collapse" id="menuDropdown">
+                        <ul class="navbar-nav">
+                            <li class="nav-item"><a class="nav-link" href="#">Courses</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">Explore</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">Educators</a></li>
+                        </ul>
+                    </div>
+                </div>
 
-<!-- Hero Section -->
-<section class="hero">
-    <div class="hero-content">
-        <h1>Learn Music with Musix</h1>
-        <p>Join our platform to learn music theory, instruments, and more from beginner to advanced levels.</p>
-        <a href="#" class="btn">Start Learning</a>
-    </div>
-</section>
+                <!-- Logo -->
+                <div class="col text-center">
+                    <img src="path/to/your/logo.png" alt="Logo" class="logo-img">
+                </div>
 
-<!-- Courses Section -->
-<section class="courses">
-    <h2>Popular Courses</h2>
-    <div class="course-cards">
-        <div class="card">
-            <div class="card-content">
-                <h3>Sight Reading</h3>
-                <p>Learn how to read music notes efficiently with our guided lessons.</p>
-                <a href="#" class="btn">View Course</a>
+                <!-- Search Bar -->
+                <div class="col-3">
+                    <input type="text" class="form-control" placeholder="Search" style="background-color: #f8f1e0; color: #333;">
+                </div>
+
+                <!-- Cart Icon -->
+                <div class="col-1 text-end">
+                    <i class="fas fa-cart-shopping cart-icon" data-bs-toggle="offcanvas" data-bs-target="#cartOffcanvas" aria-controls="cartOffcanvas"></i>
+                </div>
+
+                <!-- Profile Icon -->
+                <div class="col-1 text-end">
+                    <i class="fas fa-user-circle" style="font-size: 24px;"></i>
+                </div>
             </div>
         </div>
-        <div class="card">
-            <div class="card-content">
-                <h3>Music Theory</h3>
-                <p>Master music theory to understand how music is constructed and performed.</p>
-                <a href="#" class="btn">View Course</a>
-            </div>
+    </header>
+
+    <!-- Offcanvas Cart -->
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="cartOffcanvas" aria-labelledby="cartOffcanvasLabel">
+        <div class="offcanvas-header">
+            <h5 id="cartOffcanvasLabel">Shopping Cart</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
         </div>
-        <div class="card">
-            <div class="card-content">
-                <h3>Piano Lessons</h3>
-                <p>Learn piano from basic to advanced with expert teachers.</p>
-                <a href="#" class="btn">View Course</a>
+        <div class="offcanvas-body">
+            <div id="cartContent">
+                <p>Nothing added yet</p>
             </div>
         </div>
     </div>
-</section>
 
-<!-- Footer -->
-<footer>
-    <div class="social-media">
-        <a href="#">Instagram</a>
-        <a href="#">Facebook</a>
-        <a href="#">Twitter</a>
+    <!-- Main Content Section (Empty) -->
+   <main class="container my-4">
+    <div class="privacy-section">
+        <div class="privacy-content">
+            <h3>Privacy Policy</h3>
+            <p>Welcome to our Privacy Policy page! Your privacy is of utmost importance to us. We collect and use your information to provide a better service. Please read this policy carefully to understand how we handle your personal data.</p>
+
+            <h4>Information Collection</h4>
+            <p>We collect personal information such as your name, email address, and payment details when you register or make a purchase on our platform. This information is used solely for providing services and improving user experience.</p>
+
+            <h4>Data Security</h4>
+            <p>We take appropriate security measures to protect your personal information. We use encryption to safeguard sensitive data and implement security protocols to protect it from unauthorized access.</p>
+
+            <h4>Cookies</h4>
+            <p>Our website uses cookies to enhance user experience and track site usage. By continuing to use our site, you consent to the use of cookies in accordance with this policy.</p>
+
+            <h4>Third-Party Services</h4>
+            <p>We may share your information with third-party services to help deliver the best experience, such as payment processors and marketing platforms. However, we ensure that all third-party services comply with data protection regulations.</p>
+
+            <h4>Your Rights</h4>
+            <p>You have the right to access, modify, or delete your personal information at any time. For any queries or requests, feel free to contact us at support@example.com.</p>
+
+            <p>Thank you for trusting us with your personal information. We are committed to ensuring your privacy and security at all times.</p>
+
+            <p>Last updated: January 2025</p>
+        </div>
     </div>
-    <p>&copy; 2025 Musix. All Rights Reserved.</p>
-</footer>
+</main>
 
+    <!-- Footer Section -->
+    <footer class="bg-black text-white py-4">
+        <div class="container text-center">
+            <div class="d-flex justify-content-center">
+                <a href="#privacy" class="mx-3">Privacy</a>
+                <a href="#about-us" class="mx-3">About Us</a>
+                <a href="#terms" class="mx-3">Terms</a>
+            </div>
+            <!-- Social Media Icons -->
+            <div class="social-icons d-flex justify-content-center mt-3">
+                <a href="#" class="mx-3"><i class="fab fa-facebook-f" style="font-size: 20px; color: white;"></i></a>
+                <a href="#" class="mx-3"><i class="fab fa-twitter" style="font-size: 20px; color: white;"></i></a>
+                <a href="#" class="mx-3"><i class="fab fa-instagram" style="font-size: 20px; color: white;"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
