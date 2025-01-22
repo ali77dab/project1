@@ -1,246 +1,237 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Responsive Website</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<!-- Header Section -->
-<header class="bg-black text-white py-2">
-    <div class="container-fluid">
-        <div class="row align-items-center">
-            <!-- Hamburger Menu -->
-            <div class="col-1">
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuDropdown" aria-controls="menuDropdown" aria-expanded="false">
-                    &#9776;
-                </button>
-                <div class="collapse navbar-collapse" id="menuDropdown">
-                    <ul class="navbar-nav">
-                        <li class="nav-item"><a class="nav-link" href="#">Courses</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Explore</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Educators</a></li>
-                    </ul>
-                </div>
-            </div>
+        <meta name="description" content="">
+        <meta name="author" content="">
 
-            <!-- Logo -->
-            <div class="col text-center">
-                <img src="https://i.postimg.cc/ydd6S2cY/LOGO-modified.png" alt="Logo" class="logo-img">
-            </div>
+        <title>mal contact</title>
 
-            <!-- Search Bar -->
-            <div class="col-3">
-                <input type="text" class="form-control" placeholder="Search" style="background-color: #f8f1e0; color: #333;">
-            </div>
+        <!-- CSS FILES -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
 
-            <!-- Cart Icon -->
-            <div class="col-1 text-end">
-                <i class="fas fa-cart-shopping cart-icon" data-bs-toggle="offcanvas" data-bs-target="#cartOffcanvas" aria-controls="cartOffcanvas"></i>
-            </div>
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-            <!-- Profile Icon -->
-            <div class="col-1 text-end">
-                <i class="fas fa-user-circle" style="font-size: 24px;"></i>
-            </div>
-        </div>
-    </div>
-</header>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;700;900&display=swap" rel="stylesheet">
 
-<!-- Offcanvas Cart -->
-<div class="offcanvas offcanvas-end" tabindex="-1" id="cartOffcanvas" aria-labelledby="cartOffcanvasLabel">
-    <div class="offcanvas-header">
-        <h5 id="cartOffcanvasLabel">Shopping Cart</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-    </div>
-    <div class="offcanvas-body">
-        <div id="cartContent">
-            <p>Nothing added yet</p>
-        </div>
-    </div>
-</div>
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/bootstrap-icons.css" rel="stylesheet">
 
-<!-- Main Content Section -->
-<main class="container my-4">
+        <link rel="stylesheet" href="css/slick.css"/>
 
-    <!-- Large Header Image -->
-    <div class="container-fluid">
-        <img src="https://i.postimg.cc/8CqDjspw/h1.png" alt="Large Header" class="img-fluid">
-    </div>
+        <link href="css/ali.css" rel="stylesheet">
+        
 
-    <!-- First Title Section -->
-    <div class="container py-5">
-        <h2 class="title">Our Featured Courses</h2>
-        <p>Browse through a wide range of music courses,
-        from beginner to advanced levels.</p>
-    </div>
-
-    <!-- Second Title Section with Image on Left -->
-    <div class="container py-5">
-        <div class="row">
-            <div class="col-md-6">
-                <img src="https://i.postimg.cc/DZdDnz8S/t1.png" alt="Featured Image" class="img-fluid">
-            </div>
-            <div class="col-md-6">
-                <h2 class="title">Why Choose Our Platform?</h2>
-                <p>Our platform offers a comprehensive and engaging learning experience for all musicians.</p>
-            </div>
-        </div>
-    </div>
-
-    <!-- Third Title Section with Image on Right -->
-    <div class="container py-5 section-3">
-        <div class="row">
-            <div class="col-md-6">
-                <h2 class="title">Get Started Today</h2>
-                <p>Join our community of passionate learners and start your musical journey.</p>
-            </div>
-            <div class="col-md-6">
-                <img src="https://i.postimg.cc/fLZ22hBD/t2.png" alt="Featured Image" class="img-fluid">
-            </div>
-        </div>
-    </div>
-
-    <!-- Filter Section -->
-    <div class="container py-3 filter-section">
-        <div class="row">
-            <div class="col-md-4 mb-3">
-                <label for="level" class="form-label filter-label">Level</label>
-                <select class="form-select" id="level">
-                    <option>Amateur</option>
-                    <option>Professional</option>
-                    <option>Master</option>
-                </select>
-            </div>
-            <div class="col-md-4 mb-3">
-                <label for="instrument" class="form-label filter-label">Instrument</label>
-                <select class="form-select" id="instrument">
-                    <option>Violin</option>
-                    <option>Guitar</option>
-                    <option>Piano</option>
-                </select>
-            </div>
-            <div class="col-md-4 mb-3">
-                <label for="sort-by" class="form-label filter-label">Sort By</label>
-                <select class="form-select" id="sort-by">
-                    <option>Popular</option>
-                    <option>Rating</option>
-                    <option>New</option>
-                </select>
-            </div>
-        </div>
-    </div>
-
-    <!-- Posts Section -->
-    <div class="container py-3 posts-section">
-        <div class="row">
-          <div class="col-4 mb-4">
-    <div class="post" style="background-image: url('https://i.postimg.cc/DZpCmS30/t5.png');">
-        <div class="d-flex align-items-center">
-            <img src="https://i.postimg.cc/cHP7tjXy/p1.png" class="rounded-circle" alt="Profile">
-            <div class="ms-3">
-                <h5></h5>
-                <p class="inline-text">John Doe, Guitarist</p>
-            </div>
-        </div>
-        <div class="d-flex justify-content-between">
-            <i class="bi bi-chat"></i>
-            <i class="bi bi-heart"></i>
-        </div>
-        <!-- دکمه خرید با علامت + -->
-        <div class="buy-btn" onclick="addToCart('https://i.postimg.cc/DZpCmS30/t5.png', 'John Doe', 'Guitarist')">
-                        <i class="fas fa-plus"></i> 
-                    </div>
-    </div>
-</div>
-
-            <div class="col-4 mb-4">
-                <div class="post" style="background-image: url('https://i.postimg.cc/mkS0dbvG/t3.png');">
-                    <div class="d-flex align-items-center">
-                        <img src="https://i.postimg.cc/0ytwJFyW/p2.png" class="rounded-circle" alt="Profile">
-                        <div class="ms-3">
-                            <h5></h5>
-                            <p>Jane, Pianist</p>
-                        </div>
-                    </div>
-                    <div class="d-flex justify-content-between">
-                        <i class="bi bi-chat"></i>
-                        <i class="bi bi-heart"></i>
-                    </div>
-                      <div class="buy-btn">
-            <i class="fas fa-plus"></i> 
-        </div>
-                </div>
-            </div>
-            <div class="col-4 mb-4">
-                <div class="post" style="background-image: url('https://i.postimg.cc/1zc2RRzV/t4.png');">
-                    <div class="d-flex align-items-center">
-                        <img src="https://i.postimg.cc/Gt0YmDmb/p3.png" class="rounded-circle" alt="Profile">
-                        <div class="ms-3">
-                            <h5></h5>
-                            <p>Emma White,Violinist</p>
-                        </div>
-                    </div>
-                    <div class="d-flex justify-content-between">
-                        <i class="bi bi-chat"></i>
-                        <i class="bi bi-heart"></i>
-                    </div>
-                      <div class="buy-btn">
-            <i class="fas fa-plus"></i> 
-        </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-</main>
-
-<!-- Footer Section -->
-<footer class="bg-black text-white py-4">
-    <div class="container text-center">
-        <div class="d-flex justify-content-center">
-            <a href="#privacy" class="mx-3">Privacy</a>
-            <a href="#about-us" class="mx-3">About Us</a>
-            <a href="#terms" class="mx-3">Terms</a>
-        </div>
-        <div class="social-icons d-flex justify-content-center mt-3">
-            <a href="#" class="mx-3"><i class="fab fa-facebook-f" style="font-size: 20px; color: white;"></i></a>
-            <a href="#" class="mx-3"><i class="fab fa-twitter" style="font-size: 20px; color: white;"></i></a>
-            <a href="#" class="mx-3"><i class="fab fa-instagram" style="font-size: 20px; color: white;"></i></a>
-        </div>
-    </div>
-</footer>
-
-<!-- JavaScript -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
-<script>
-// Function to add post to cart
-function addToCart(imageUrl, name, role) {
-    const cartContent = document.getElementById('cartContent');
-    const newCartItem = document.createElement('div');
-    newCartItem.classList.add('cart-item', 'd-flex', 'align-items-center', 'my-3');
-    newCartItem.innerHTML = `
-        <img src="${imageUrl}" alt="Post Image" class="cart-item-image" style="width: 50px; height: 50px; border-radius: 50%; margin-right: 10px;">
-        <div>
-            <h6>${name}</h6>
-            <p>${role}</p>
-        </div>
-    `;
+    </head>
     
-    // Append the new item to the cart content
-    cartContent.appendChild(newCartItem);
+    <body>
 
-    // Update the cart status
-    if (cartContent.children.length > 1) {
-        document.querySelector('#cartContent p').style.display = 'none';
-    }
-}
-</script>
+        <section class="preloader">
+            <div class="spinner">
+                <span class="sk-inner-circle"></span>
+            </div>
+        </section>
+    
+        <main>
 
-</body>
+            <nav class="navbar navbar-expand-lg">
+                <div class="container">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <a class="navbar-brand" href="index.html">
+                        <strong><span>Mal</span> </strong>
+                    </a>
+
+                    <div class="d-lg-none">
+                        <a href="sign-in.html" class="bi-person custom-icon me-3"></a>
+
+                        <a href="product-detail.html" class="bi-bag custom-icon"></a>
+                    </div>
+
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav mx-auto">
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.html">Home</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link active" href="ali.html">user</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="page5.html">course</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="npage4.html">master</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="npage3.html">Contact</a>
+                            </li>
+                        </ul>
+
+                        <div class="d-none d-lg-block">
+                            <a href="sign-in.html" class="bi-person custom-icon me-3"></a>
+
+                            <a href="product-detail.html" class="bi-bag custom-icon"></a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+
+            <header class="site-header section-padding-img site-header-image">
+                <div class="container">
+                    <div class="row">
+
+                        <div class="col-lg-10 col-12 header-info">
+                            <h1>
+                                <span class="d-block text-primary">Say hello to us</span>
+                                <span class="d-block text-dark">love to hear you</span>
+                            </h1>
+                        </div>
+                    </div>
+                </div>
+
+                <img src="image/t1.png" class="header-image img-fluid" alt="">
+            </header>
+
+            <section class="contact section-padding">
+                <div class="container">
+                    <div class="row">
+                        
+                        <div class="col-lg-6 col-12">
+                            <h2 class="mb-4">Let's <span>begin</span></h2>
+
+                            <form class="contact-form me-lg-5 pe-lg-3" role="form">
+
+                                <div class="form-floating">
+                                    <input type="text" name="name" id="name" class="form-control" placeholder="Full name" required>
+
+                                    <label for="name">Full name</label>
+                                </div>
+
+                                <div class="form-floating my-4">
+                                    <input type="email" name="email" id="email" pattern="[^ @]*@[^ @]*" class="form-control" placeholder="Email address" required>
+
+                                    <label for="email">Email address</label>
+                                </div>
+                                
+                                <div class="form-floating my-4">
+                                    <input type="subject" name="subject" id="subject"class="form-control" placeholder="Subject" required>
+
+                                    <label for="subject">Subject</label>
+                                </div>
+
+                                <div class="form-floating mb-4">
+                                    <textarea id="message" name="message" class="form-control" placeholder="Leave a comment here" required style="height: 160px"></textarea>
+
+                                    <label for="message">Tell us about the project</label>
+                                </div>
+
+                                <div class="col-lg-5 col-6">
+                                    <button type="submit" class="form-control">Send</button>
+                                </div>
+                            </form>
+                        </div>
+
+                        <div class="col-lg-6 col-12 mt-5 ms-auto">
+                            <div class="row">
+                                <div class="col-6 border-end contact-info">
+                                    <h6 class="mb-3">New Business</h6>
+
+                                    <a href="mailto:hello@company.com" class="custom-link">
+                                        hello@company.com
+                                        <i class="bi-arrow-right ms-2"></i>
+                                    </a>
+                                </div>
+
+                                <div class="col-6 contact-info">
+                                	<h6 class="mb-3">Main Studio</h6>
+
+                                    <a href="mailto:studio@company.com" class="custom-link">
+                                        studio@company.com
+                                        <i class="bi-arrow-right ms-2"></i>
+                                    </a>
+                                </div>
+
+                                <div class="col-6 border-top border-end contact-info">
+                                    <h6 class="mb-3">Our Office</h6>
+
+                                    <p class="text-muted">Akershusstranda 20, 0150 Oslo, Norway</p>
+                                </div>
+
+                                <div class="col-6 border-top contact-info">
+                                    <h6 class="mb-3">Our Socials</h6>
+
+                                    <ul class="social-icon">
+
+                                        <li><a href="#" class="social-icon-link bi-messenger"></a></li>
+
+                                        <li><a href="#" class="social-icon-link bi-youtube"></a></li>
+
+                                        <li><a href="#" class="social-icon-link bi-instagram"></a></li>
+
+                                        <li><a href="#" class="social-icon-link bi-whatsapp"></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="site-footer">
+            <div class="container">
+                <div class="row">
+
+                    
+
+                    <div class="col-lg-5 col-8">
+                        <h5 class="text-white mb-3">Sitemap</h5>
+
+                        <ul class="footer-menu d-flex flex-wrap">
+                            <li class="footer-menu-item"><a href="about.html" class="footer-menu-link">Story</a></li>
+
+
+                            <li class="footer-menu-item"><a href="#" class="footer-menu-link">Privacy policy</a></li>
+
+
+                            <li class="footer-menu-item"><a href="#" class="footer-menu-link">Contact</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-3 col-4">
+                        <h5 class="text-white mb-3">Social</h5>
+
+                        <ul class="social-icon">
+
+                            <li><a href="#" class="social-icon-link bi-youtube"></a></li>
+
+                            <li><a href="#" class="social-icon-link bi-whatsapp"></a></li>
+
+                            <li><a href="#" class="social-icon-link bi-instagram"></a></li>
+
+                            <li><a href="#" class="social-icon-link bi-skype"></a></li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </footer>
+
+        <!-- JAVASCRIPT FILES -->
+        <script src="js/jquery.min.js"></script>
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <script src="js/Headroom.js"></script>
+        <script src="js/jQuery.headroom.js"></script>
+        <script src="js/slick.min.js"></script>
+        <script src="js/custom.js"></script>
+    </body>
 </html>
